@@ -1,0 +1,418 @@
+<!-- DRG SOUL — drgsoul.com — v2 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DRG Soul · Daniela Rodríguez — Psicóloga Humanista · Mindfulness</title>
+<meta name="description" content="Daniela Rodríguez Gallego — Psicóloga Humanista, Mentora, Facilitadora de Mindfulness. Un espacio para habitarnos con mayor consciencia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#FBFCFB;
+  --ink:#3B4650;
+  --muted:#7F8C93;
+  --teal:#1F8A80;
+  --teal-bright:#37B6A8;
+  --line:rgba(59,70,80,.12);
+  --w-aqua:rgba(146,214,214,.55);
+  --w-lav:rgba(192,184,232,.52);
+  --w-blush:rgba(246,199,192,.50);
+  --w-mint:rgba(180,226,199,.52);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:17px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:400;line-height:1.08;margin:0}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);font-weight:600}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:3px}
+.wash{position:absolute;border-radius:50%;filter:blur(46px);mix-blend-mode:multiply;pointer-events:none;z-index:0;opacity:.9}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:60;background:rgba(251,252,251,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:"Fraunces",serif;font-size:21px;letter-spacing:.01em}
+.brand b{color:var(--teal);font-weight:500}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{text-decoration:none;font-size:14.5px;font-weight:500;color:var(--ink);opacity:.82}
+.nav-links a:hover{opacity:1;color:var(--teal)}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:14.5px;
+  padding:11px 21px;border-radius:100px;text-decoration:none;transition:.22s;border:1px solid transparent}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:0 6px 18px rgba(31,138,128,.22)}
+.btn-primary:hover{background:#24988c;transform:translateY(-1px)}
+.btn-soft{border-color:var(--line);color:var(--ink);background:rgba(255,255,255,.5)}
+.btn-soft:hover{border-color:var(--teal);color:var(--teal)}
+.nav .btn-primary{padding:9px 19px}
+
+/* Hero */
+.hero{position:relative;text-align:center;padding:80px 0 104px;overflow:hidden}
+.hero .w-aqua{width:520px;height:520px;background:var(--w-aqua);top:-90px;left:8%}
+.hero .w-lav{width:460px;height:460px;background:var(--w-lav);top:40px;right:4%}
+.hero .w-blush{width:400px;height:400px;background:var(--w-blush);top:220px;left:30%}
+.hero .w-mint{width:360px;height:360px;background:var(--w-mint);bottom:-120px;right:24%}
+.rings{position:absolute;top:130px;left:50%;transform:translateX(-50%);width:520px;height:520px;z-index:1;pointer-events:none}
+.rings span{position:absolute;inset:0;margin:auto;width:120px;height:120px;border-radius:50%;
+  border:1px solid rgba(31,138,128,.28);animation:expand 7s ease-out infinite}
+.rings span:nth-child(2){animation-delay:2.3s}
+.rings span:nth-child(3){animation-delay:4.6s}
+@keyframes expand{0%{transform:scale(.4);opacity:0}20%{opacity:.7}100%{transform:scale(3.6);opacity:0}}
+.bird{position:relative;z-index:3;width:180px;margin:0 auto 4px}
+.hero h1{font-size:clamp(46px,7.4vw,90px);margin:18px 0 6px;letter-spacing:-.015em}
+.hero h1 em{font-style:italic;color:var(--teal)}
+.hero .lede{max-width:640px;margin:20px auto 0;font-size:clamp(17px,2vw,20px);color:#55616b}
+.hero-cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* Secciones */
+section{padding:96px 0;position:relative}
+.section-head{max-width:660px}
+.section-head h2{font-size:clamp(30px,4.4vw,46px);margin-top:14px}
+.section-head p{color:var(--muted);margin-top:16px}
+
+/* Manifiesto */
+.manifesto{overflow:hidden}
+.manifesto .w-aqua{width:420px;height:420px;background:var(--w-aqua);top:-80px;left:-60px}
+.manifesto .w-lav{width:380px;height:380px;background:var(--w-lav);bottom:-120px;right:-40px}
+.manifesto .wrap{max-width:820px;text-align:center}
+.manifesto p.q{font-family:"Fraunces",serif;font-size:clamp(24px,3.6vw,37px);line-height:1.38;font-weight:300;color:#434e58}
+.manifesto p.q em{font-style:italic;color:var(--teal)}
+.sign{margin-top:28px;color:var(--muted);font-size:14px;letter-spacing:.04em}
+
+/* Sobre Daniela */
+.about{overflow:hidden}
+.about .w-blush{width:460px;height:460px;background:var(--w-blush);top:-60px;right:-80px}
+.about .w-mint{width:400px;height:400px;background:var(--w-mint);bottom:-100px;left:-60px}
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center;margin-top:48px}
+.about-photo{width:100%;border-radius:28px;aspect-ratio:4/5;object-fit:cover;
+  border:1px solid var(--line);box-shadow:0 20px 50px rgba(59,70,80,.10)}
+.about-text p{color:#4b5661;margin:0 0 18px;font-size:16.5px;line-height:1.75}
+.about-text p:last-child{margin-bottom:0}
+.about-text .highlight{font-family:"Fraunces",serif;font-size:20px;color:var(--ink);line-height:1.5;font-weight:300;
+  border-left:3px solid var(--teal);padding-left:20px;margin:28px 0}
+
+/* Acompañamiento */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:52px}
+.card{background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:22px;padding:34px 30px;
+  backdrop-filter:blur(4px);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(59,70,80,.09);border-color:rgba(31,138,128,.45)}
+.card .num{font-family:"Fraunces",serif;font-size:15px;color:var(--teal)}
+.card h3{font-size:24px;margin:14px 0 10px}
+.card p{color:var(--muted);font-size:15.5px;margin:0}
+.card .meta{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--ink)}
+
+/* Para quién */
+.who{overflow:hidden}
+.who .w-mint{width:520px;height:520px;background:var(--w-mint);top:-80px;right:-120px}
+.who .w-lav{width:440px;height:440px;background:var(--w-lav);bottom:-160px;left:-100px}
+.who .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;
+  background:rgba(255,255,255,.5);border:1px solid var(--line);border-radius:28px;padding:52px;backdrop-filter:blur(4px)}
+.who h2{font-size:clamp(29px,4.2vw,42px)}
+.who ul{list-style:none;padding:0;margin:22px 0 0}
+.who li{padding:15px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline;color:#4b5661}
+.who li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal-bright),var(--teal));transform:translateY(-2px)}
+
+/* Voces */
+.voices-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:22px;margin-top:48px}
+.vquote{position:relative;background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:22px;padding:40px 36px;backdrop-filter:blur(4px)}
+.vquote .mark{font-family:"Fraunces",serif;font-size:64px;color:var(--teal);opacity:.18;line-height:1;position:absolute;top:18px;left:28px}
+.vquote p{font-family:"Fraunces",serif;font-size:18px;line-height:1.55;font-weight:300;margin:0;color:#454f59}
+.vquote p em{font-style:italic;color:var(--teal)}
+.vquote .who-q{margin-top:22px;font-size:13.5px;color:var(--muted);letter-spacing:.03em;font-weight:600}
+
+/* Booking */
+.book{position:relative;margin:0 28px 96px;padding:82px 28px;text-align:center;overflow:hidden;
+  border-radius:32px;border:1px solid var(--line);
+  background:
+    radial-gradient(60% 80% at 18% 20%,var(--w-aqua),transparent 60%),
+    radial-gradient(60% 80% at 82% 30%,var(--w-lav),transparent 60%),
+    radial-gradient(70% 90% at 50% 110%,var(--w-blush),transparent 55%),
+    #fbfcfb}
+.book .wrap{max-width:640px}
+.book h2{font-size:clamp(30px,4.6vw,48px);margin-top:14px}
+.book p{color:#55616b;margin:18px auto 0;max-width:490px}
+.book .btn-primary{margin-top:30px;font-size:16px;padding:15px 32px}
+.book small{display:block;margin-top:18px;color:var(--muted);font-size:13px}
+
+/* Footer */
+footer{padding:56px 0;border-top:1px solid var(--line);text-align:center}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.foot-brand{font-family:"Fraunces",serif;font-size:20px}
+.foot-brand b{color:var(--teal);font-weight:500}
+.foot-links{display:flex;gap:28px;font-size:14px;font-weight:500}
+.foot-links a{text-decoration:none;opacity:.7}
+.foot-links a:hover{opacity:1;color:var(--teal)}
+.foot-mail{font-size:13px;color:var(--muted)}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+/* Mobile */
+@media(max-width:768px){
+  .nav-links a:not(.btn){display:none}
+  .hero{padding:56px 0 72px}
+  .bird{width:120px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .about-photo{max-width:320px;margin:0 auto}
+  .who .wrap{grid-template-columns:1fr;padding:32px}
+  .cards{grid-template-columns:1fr}
+  .voices-grid{grid-template-columns:1fr}
+}
+</style>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand">DRG <b>Soul</b></div>
+    <div class="nav-links">
+      <a href="#daniela">Daniela</a>
+      <a href="#manifiesto">Filosofía</a>
+      <a href="#acompanamiento">Acompañamiento</a>
+      <a href="#quien">Para quién</a>
+      <a href="#voces">Voces</a>
+      <a class="btn btn-primary" href="https://wa.me/573027109880">Agenda tu sesión</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="wash w-aqua"></div>
+  <div class="wash w-lav"></div>
+  <div class="wash w-blush"></div>
+  <div class="wash w-mint"></div>
+  <div class="rings"><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <!-- Colibrí SVG -->
+    <figure class="bird" aria-label="Colibrí DRG Soul">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(100,95)">
+          <path d="M-5 30 Q-20 55 -28 78 Q-30 88 -23 85 Q-15 83 -10 70 Q-2 52 0 35Z" fill="#6b9e98" opacity=".85"/>
+          <path d="M-2 33 Q-13 58 -18 75 Q-19 83 -13 80 Q-6 76 -2 65 Q3 50 3 35Z" fill="#8ecac0" opacity=".8"/>
+          <ellipse cx="0" cy="15" rx="11" ry="20" fill="#7cb5ae" transform="rotate(-8)"/>
+          <ellipse cx="1" cy="14" rx="9" ry="17" fill="#8ecac0" transform="rotate(-8)"/>
+          <ellipse cx="2" cy="8" rx="7" ry="10" fill="#a8d8ce"/>
+          <path d="M-8 10 Q-40 -20 -55 -35 Q-63 -43 -58 -45 Q-50 -46 -35 -36 Q-20 -25 -5 5Z" fill="#9b7cc4" opacity=".75"/>
+          <path d="M-6 9 Q-35 -15 -48 -29 Q-54 -36 -50 -38 Q-44 -39 -30 -30 Q-18 -21 -4 4Z" fill="#b494d8" opacity=".65"/>
+          <path d="M8 8 Q38 -25 53 -40 Q60 -48 56 -50 Q50 -51 36 -39 Q21 -26 5 3Z" fill="#9b7cc4" opacity=".75"/>
+          <path d="M7 7 Q33 -19 45 -33 Q52 -39 48 -41 Q43 -42 31 -33 Q19 -23 4 2Z" fill="#b494d8" opacity=".65"/>
+          <circle cx="3" cy="-9" r="7" fill="#6b9e98"/>
+          <circle cx="3" cy="-9" r="6" fill="#7cb5ae"/>
+          <circle cx="5" cy="-10.5" r="1.8" fill="#2a2a3a"/>
+          <circle cx="5.6" cy="-11.1" r=".6" fill="#fff"/>
+          <path d="M7 -11 Q18 -15 28 -16 Q29 -15.5 28 -15 Q18 -13.5 7 -9.5Z" fill="#555"/>
+          <path d="M-1 -15 Q0 -21 3 -19 Q5 -17 4 -14Z" fill="#c9a8e8" opacity=".7"/>
+        </g>
+      </svg>
+    </figure>
+    <h1 class="reveal">Daniela<br><em>Rodríguez</em></h1>
+    <p class="lede reveal">Un espacio sereno para volver a ti, confiar en tu voz y expandir tu consciencia hacia la vida que quieres habitar.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="https://wa.me/573027109880">Agenda tu sesión</a>
+      <a class="btn btn-soft" href="#daniela">Conóceme</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MANIFIESTO ===================== -->
+<section class="manifesto" id="manifiesto">
+  <div class="wash w-aqua"></div>
+  <div class="wash w-lav"></div>
+  <div class="wrap reveal">
+    <p class="eyebrow">Un camino hacia adentro</p>
+    <p class="q">No se trata de arreglar nada. Se trata de <em>habitarnos</em>: detenernos, escucharnos,
+      reconocernos y atrevernos a mirar aquello que somos — incluso lo que durante mucho tiempo
+      hemos evitado ver.</p>
+    <p class="q" style="font-size:clamp(19px,2.8vw,26px);margin-top:28px;opacity:.75">Una invitación a vivir con más consciencia, atención plena, propósito y alma.</p>
+    <div class="sign">— Daniela</div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE DANIELA ===================== -->
+<section class="about" id="daniela">
+  <div class="wash w-blush"></div>
+  <div class="wash w-mint"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Sobre Daniela</p>
+      <h2>El camino comienza adentro</h2>
+    </div>
+    <div class="about-grid">
+      <img class="about-photo reveal" src="https://drgsoul.com/daniela.jpg" alt="Daniela Rodríguez Gallego"
+        onerror="this.style.background='linear-gradient(135deg,var(--w-aqua),var(--w-lav))';this.style.display='block'">
+      <div class="about-text reveal">
+        <p>Soy <strong>Daniela Rodríguez Gallego</strong>, psicóloga humanista, mentora, mentora organizacional,
+          facilitadora de mindfulness y creadora de <strong>DRG Soul</strong>.</p>
+        <p>Desde hace más de 8 años acompaño procesos de desarrollo y transformación personal y organizacional.
+          Trabajo con personas, parejas, líderes, equipos y organizaciones, integrando psicología y desarrollo
+          humano para acompañar procesos que van más allá del cambio de comportamientos.</p>
+        <p class="highlight">Creo que la verdadera transformación no comienza afuera. Comienza cuando aprendemos
+          a habitarnos — a detenernos, escucharnos y atrevernos a mirar aquello que somos.</p>
+        <p>Porque cuando volvemos hacia adentro, algo comienza a ordenarse afuera: la forma en que nos relacionamos,
+          amamos, lideramos, trabajamos y vivimos.</p>
+        <p>Mi invitación es a cultivar la atención plena, reconectar con nuestra esencia y vivir desde el propósito
+          y el sentido. Porque no se trata solamente de cambiar lo que haces — se trata de transformar
+          desde <em>quién eres</em>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACOMPAÑAMIENTO ===================== -->
+<section id="acompanamiento">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Un espacio para habitarnos</p>
+      <h2>Cómo acompaño</h2>
+      <p>Cada proceso es distinto. Empezamos por donde tú estás hoy, sin etiquetas ni fórmulas. Un espacio de presencia,
+        escucha profunda y herramientas de mindfulness para reconectar con tu calma y tu centro.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="num">01</div>
+        <h3>Sesión individual</h3>
+        <p>Un encuentro personal para mirar con calma eso que hoy pide tu atención.
+          Un espacio seguro de escucha profunda y herramientas de mindfulness.</p>
+        <div class="meta">1 hora · Virtual o presencial</div>
+      </div>
+      <div class="card reveal">
+        <div class="num">02</div>
+        <h3>Sesión de pareja</h3>
+        <p>Un espacio de acompañamiento donde ambos expresan lo que sienten, comprenden lo que ocurre
+          en la relación y aprenden a comunicarse desde el respeto, la consciencia y el amor.</p>
+        <div class="meta">1 hora 30 min · Virtual o presencial</div>
+      </div>
+      <div class="card reveal">
+        <div class="num">03</div>
+        <h3>Procesos de acompañamiento</h3>
+        <p>Un camino sostenido en el tiempo, a tu ritmo, para transformaciones que quieres cuidar de verdad.
+          Paquetes de sesiones diseñados para profundizar tu proceso.</p>
+        <div class="meta">Por ciclos · A tu ritmo</div>
+      </div>
+      <div class="card reveal">
+        <div class="num">04</div>
+        <h3>Organizacional y equipos</h3>
+        <p>Espacios para líderes, equipos y organizaciones que quieren reconectar con su bienestar,
+          propósito y formas más conscientes de trabajar juntos.</p>
+        <div class="meta">Empresas y grupos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARA QUIÉN ===================== -->
+<section class="who" id="quien">
+  <div class="wash w-mint"></div>
+  <div class="wash w-lav"></div>
+  <div class="wrap reveal">
+    <div>
+      <p class="eyebrow">Para quién es</p>
+      <h2>Si sientes que es momento de expandirte</h2>
+      <p style="color:var(--muted);margin-top:16px">
+        Este espacio es para ti si te reconoces en alguno de estos momentos.</p>
+    </div>
+    <ul>
+      <li>Sientes que llegaste a un punto y quieres claridad sobre lo que sigue.</li>
+      <li>Cargas con más de lo que dices en voz alta y necesitas soltarlo.</li>
+      <li>Quieres decisiones más tuyas, con menos ruido de afuera.</li>
+      <li>Buscas reconectar contigo, con tu pareja o con tu equipo desde un lugar más auténtico.</li>
+      <li>Quieres un acompañamiento cálido y de confianza, sin juicios ni fórmulas.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== VOCES ===================== -->
+<section id="voces">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Voces</p>
+      <h2>Quienes ya caminaron conmigo</h2>
+    </div>
+    <div class="voices-grid">
+      <div class="vquote reveal">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>A trav&eacute;s de las sesiones aprend&iacute; el valor de tres palabras que hoy gu&iacute;an mi vida:
+          <em>conciencia, l&iacute;mites y visi&oacute;n</em>. La conciencia me ha permitido observar mis emociones
+          sin juicio, entender sus ra&iacute;ces y actuar con mayor claridad. Los l&iacute;mites me ense&ntilde;aron
+          a cuidar de m&iacute; sin perder la empat&iacute;a, y la visi&oacute;n me ayud&oacute;
+          a proyectar mi futuro con prop&oacute;sito. Entend&iacute; que puedo liderar desde
+          la autenticidad, la sensibilidad y la presencia.</p>
+        <div class="who-q">Isabela Quintero</div>
+      </div>
+      <div class="vquote reveal">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>Not&eacute; cambios reales en la forma de manejar las situaciones adversas. Una frase me marc&oacute;
+          profundamente: <em>actuar desde el amor y no desde el miedo</em>. Es algo muy profundo, que resalta mi
+          autenticidad desde el lugar m&aacute;s genuino. Cuando actuamos desde el amor abrimos otra
+          perspectiva y otra manera de resolver cualquier situaci&oacute;n.</p>
+        <div class="who-q">Lyan Camargo</div>
+      </div>
+      <div class="vquote reveal">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>Llegu&eacute; sinti&eacute;ndome bloqueada, con miedo y extra&ntilde;ando profundamente la persona que era.
+          Me sent&iacute;a como alguien que todav&iacute;a estaba debajo de los escombros, pero con vida.
+          El acompa&ntilde;amiento de Daniela me permiti&oacute; empezar a <em>mirar lo que estaba viviendo de otra manera</em>
+          y reconocer que, aunque muchas cosas hab&iacute;an cambiado, todav&iacute;a hab&iacute;a una parte de m&iacute;
+          que pod&iacute;a reconstruirse.</p>
+        <div class="who-q">Alison Mayorga</div>
+      </div>
+      <div class="vquote reveal">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>Mi proceso con Daniela fue un camino de <em>volver la mirada hacia m&iacute;</em>.
+          Llegu&eacute; pensando que necesitaba encontrar respuestas sobre mi hija y termin&eacute;
+          encontr&aacute;ndome conmigo misma. Pude reconocer mis miedos, mi necesidad de controlar
+          y la forma en que estaba cargando responsabilidades que no me correspond&iacute;an.
+          Me llevo herramientas, pero sobre todo una nueva manera de comprenderme y de relacionarme con mi hija.</p>
+        <div class="who-q">Maritza Sarmiento</div>
+      </div>
+      <div class="vquote reveal">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>Agradezco profundamente este espacio porque me permiti&oacute; reconocer aspectos de m&iacute; que
+          necesitaban ser escuchados, integrar aprendizajes y <em>volver a conectar con mi propia esencia</em>.
+          Daniela no solo me acompa&ntilde;&oacute; desde su conocimiento profesional, sino desde una presencia
+          humana, sensible y profundamente consciente. A veces, quienes acompa&ntilde;amos tambi&eacute;n necesitamos
+          un espacio donde podamos simplemente ser, sentirnos sostenidos y seguir creciendo.</p>
+        <div class="who-q">Paula Echeverri</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOOKING ===================== -->
+<div class="book" id="agenda">
+  <div class="wrap reveal">
+    <p class="eyebrow">Da el primer paso</p>
+    <h2>Tu sesión comienza con una conversación</h2>
+    <p>Escríbeme por WhatsApp y coordinamos juntos el momento ideal para tu primer encuentro.
+      Te responde Aura Luz, mi asistente, y agendas en minutos.</p>
+    <a class="btn btn-primary" href="https://wa.me/573027109880">Escribir por WhatsApp</a>
+    <small>Lun a Vie · Cali, Colombia · +57 302 710 9880</small>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">DRG <b>Soul</b></div>
+    <div class="foot-links">
+      <a href="#daniela">Daniela</a>
+      <a href="#manifiesto">Filosofía</a>
+      <a href="#acompanamiento">Acompañamiento</a>
+      <a href="https://wa.me/573027109880">WhatsApp</a>
+      <a href="https://instagram.com/danirodriga">Instagram</a>
+    </div>
+    <div class="foot-mail">danielarodriguez@drgsoul.com</div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
